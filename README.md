@@ -25,4 +25,4 @@ python data/validate_submission.py output/submission.csv
 
 ## Sandbox
 
-Use `sandbox/colab_sandbox.ipynb` (share "Anyone with the link").
+Use `sandbox/colab_sandbox.ipynb` 
