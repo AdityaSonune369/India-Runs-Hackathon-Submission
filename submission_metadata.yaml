@@ -11,7 +11,7 @@ team_members:
     role: "Student"
 
 github_repo: "https://github.com/AdityaSonune369/India-Runs-Hackathon-Submission"
-sandbox_link: "https://colab.research.google.com/drive/1CYWAHjda4v0uNfRp3_Skef98yh48XYq8?usp=sharing"
+sandbox_link: "https://colab.research.google.com/github/AdityaSonune369/India-Runs-Hackathon-Submission/blob/main/sandbox/colab_sandbox.ipynb"
 reproduce_command: "python -m src.rank --data ./data/candidates.jsonl --out ./output/submission.csv"
 
 compute:
