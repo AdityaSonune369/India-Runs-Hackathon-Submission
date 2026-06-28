@@ -25,10 +25,4 @@ python data/validate_submission.py output/submission.csv
 
 ## Sandbox
 
-`sandbox/colab_sandbox.ipynb` (recommended open link below)
-
-- Auto-downloads sample data
-- Shows ranked results immediately when opened
-- Click **Runtime > Run all** to regenerate
-
-Link: https://colab.research.google.com/github/AdityaSonune369/India-Runs-Hackathon-Submission/blob/main/sandbox/colab_sandbox.ipynb
+`sandbox/colab_sandbox.ipynb`
