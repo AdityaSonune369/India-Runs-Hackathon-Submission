@@ -299,7 +299,12 @@ def main():
     out_path.parent.mkdir(parents=True, exist_ok=True)
     df.to_csv(out_path, index=False, encoding="utf-8")
 
+    # Also export xlsx
+    xlsx_path = out_path.with_suffix(".xlsx")
+    df.to_excel(xlsx_path, index=False)
+
     print(f"Wrote {len(df)} rows to {out_path}")
+    print(f"Wrote {len(df)} rows to {xlsx_path}")
     print("Top 5:")
     print(df.head(5).to_string(index=False))
 

@@ -12,6 +12,8 @@ pip install -r requirements.txt
 python -m src.rank --data ./data/candidates.jsonl --out ./output/submission.csv
 ```
 
+This produces both `submission.csv` (required) and `submission.xlsx`.
+
 For local testing:
 ```bash
 python -m src.rank --data ./data/sample_candidates.json --out ./output/test.csv --topk 20
