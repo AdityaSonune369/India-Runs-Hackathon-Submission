@@ -1,5 +1,7 @@
 # India Runs Track 1
 
+A hybrid candidate ranker for the Senior AI Engineer role at Redrob AI. Combines BM25 semantic matching over rich profile text with behavioral signals from Redrob, JD-specific feature overlap, career trajectory analysis, and experience-band fitting. Outputs ranked results in both CSV and XLSX.
+
 ## Setup
 
 ```bash
@@ -27,4 +29,4 @@ python data/validate_submission.py output/submission.csv
 
 ## Sandbox
 
-`sandbox/colab_sandbox.ipynb`
+`sandbox/colab_sandbox.ipynb` — runs the ranker on the included sample data (top 20).
