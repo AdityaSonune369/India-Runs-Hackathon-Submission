@@ -1,0 +1,40 @@
+team_name: "Solo Learner"
+
+primary_contact:
+  name: "Aditya Sonune"
+  email: "adityasonune654@gmail.com"
+  phone: "+91-9511727934"
+
+team_members:
+  - name: "Aditya Sonune"
+    email: "adityasonune654@gmail.com"
+    role: "Student"
+
+github_repo: "https://github.com/AdityaSonune369/India-Runs-Hackathon-Submission"
+sandbox_link: "https://colab.research.google.com/drive/1CYWAHjda4v0uNfRp3_Skef98yh48XYq8?usp=sharing"
+reproduce_command: "python -m src.rank --data ./data/candidates.jsonl --out ./output/submission.csv"
+
+compute:
+  platform: "Windows / Colab CPU"
+  cpu_cores: 8
+  ram_gb: 16
+  python_version: "3.11"
+  os: "Windows 11"
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+  pre_computation_required: false
+  pre_computation_time_minutes: 0
+
+ai_tools_used:
+  - "Grok"
+
+ai_usage_summary: "Used Grok for architecture and code structure. Core logic and tuning done manually."
+
+methodology_summary: "Hybrid ranker using BM25 over concatenated profile text (headline, summary, career, skills, education) combined with strong behavioral signals from redrob_signals (open_to_work, recruiter_response_rate, profile_views, recency, etc.), JD-specific keyword/phrase overlap on production retrieval & ranking terms, career trajectory fit (build/ship language + anti-consulting penalty), and experience band fit (target 5-9 yrs). Scores are a weighted blend; final ranking uses rank-derived normalized scores with non-increasing property."
+
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: false
+  reproduction_tested: true

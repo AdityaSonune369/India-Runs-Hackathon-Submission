@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+
+# Data (large files provided by organizers; sample is small and committed)
+data/candidates.jsonl
+data/candidates.jsonl.gz
+data/*.jsonl
+!data/sample_candidates.json
+!data/validate_submission.py
+
+# Output - keep the final submission example; ignore temp/test outputs
+output/test*.csv
+output/sandbox*.csv
+output/tmp*.csv
+# output/submission.csv  # uncomment if you prefer not to commit the final submission artifact
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Misc
+*.log
+sandbox_submission.csv
+test_*.csv
